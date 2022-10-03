@@ -27,8 +27,10 @@ namespace FF12RNGHelperPC
         //public static readonly IntPtr FRAME_COUNTER_ADDR = new IntPtr(0x01F7F5A0); //Address of Frame Counter. used as part of RNG Seeding routine.
 
         //TODO: Consider including memory addresses for all version of the game.
-        public static readonly IntPtr MT_ADDR = new IntPtr(0x02EB3870); //Address of first element of mt, an array of 624 Uint32
-        public static readonly IntPtr MTI_ADDR = new IntPtr(0x02EB4230); //Address of mti, an Int32
+        //public static readonly IntPtr MT_ADDR = new IntPtr(0x02EB3870); //Address of first element of mt, an array of 624 Uint32
+        public static readonly IntPtr MT_ADDR = new IntPtr(0x0221e060); //Address of first element of mt, an array of 624 Uint32
+        //public static readonly IntPtr MTI_ADDR = new IntPtr(0x02EB4230); //Address of mti, an Int32
+        public static readonly IntPtr MTI_ADDR = new IntPtr(0x0221ea20); //Address of mti, an Int32
         private const int INT32_SIZE = 4;
         private const int STATE_BUFFER_SIZE = INT32_SIZE * (RNG2002.N + 1);
 
